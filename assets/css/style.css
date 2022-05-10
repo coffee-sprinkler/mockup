@@ -692,6 +692,11 @@ a:hover {
   width: 194px;
   margin: 10px auto 0;
 }
+
+.bundle-list .card .best-desc.hide {
+  opacity: 0;
+}
+
 .bundle-list .card .caption {
   padding-block: 11px;
 }

@@ -23,7 +23,20 @@ btnHamburger.addEventListener('click', function () {
   }
 });
 
-if (window.innerWidth <= 428) {
+const MOBILE = 428;
+
+const mobileView = () => {
   ingredientsBtn.innerHTML =
     'GET PURPOSE NOW <i class="fa-solid fa-play ms-3"></i>';
+};
+
+const webView = () => {
+  ingredientsBtn.innerHTML = `View Our Full List of Ingredients
+  <img class="new__window ms-3" src="./assets/images/new-window.png" alt="new-window">`;
+};
+
+if (window.innerWidth <= MOBILE) {
+  mobileView();
+} else {
+  webView();
 }

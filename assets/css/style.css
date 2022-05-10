@@ -798,7 +798,7 @@ a:hover {
   }
 }
 
-@media screen and (width: 428px) {
+@media screen and (max-width: 428px) {
   .bundle {
     position: relative;
     height: 850px;

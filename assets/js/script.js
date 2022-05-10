@@ -23,11 +23,43 @@ btnHamburger.addEventListener('click', function () {
   }
 });
 
+const bundleItems = document.querySelectorAll('.bundle-item');
+const rightButton = document.querySelector('[data-right]');
+const leftButton = document.querySelector('[data-left]');
+
 const MOBILE = 428;
+
+const showCard = steps => {
+  bundleItems.forEach((element, value) => {
+    if (value == steps) {
+      element.classList.add('show');
+    } else {
+      element.classList.remove('show');
+    }
+  });
+};
 
 const mobileView = () => {
   ingredientsBtn.innerHTML =
     'GET PURPOSE NOW <i class="fa-solid fa-play ms-3"></i>';
+
+  let steps = 0;
+  const moveRight = rightButton.addEventListener('click', () => {
+    if (steps < 2) {
+      steps++;
+    } else {
+      steps = 0;
+    }
+    showCard(steps);
+  });
+  const moveLeft = leftButton.addEventListener('click', () => {
+    if (steps == 0) {
+      steps = 2;
+    } else {
+      steps--;
+    }
+    showCard(steps);
+  });
 };
 
 const webView = () => {

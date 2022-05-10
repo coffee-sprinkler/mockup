@@ -753,6 +753,11 @@ a:hover {
   all: unset;
 }
 
+[data-right],
+[data-left] {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .ingredients .container {
     width: calc(100% - 276px);
@@ -785,5 +790,43 @@ a:hover {
   .accordion {
     width: 1035px;
     margin-inline: auto;
+  }
+}
+
+@media screen and (width: 428px) {
+  .bundle {
+    position: relative;
+    height: 850px;
+  }
+
+  .bundle-item {
+    position: absolute;
+    display: none;
+  }
+
+  .bundle-item.show {
+    display: block;
+  }
+
+  .bundle-cards {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    transform: translateX(-50%);
+  }
+
+  [data-right],
+  [data-left] {
+    position: absolute;
+    width: 64px;
+    cursor: pointer;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+  }
+
+  [data-right] {
+    right: 0;
   }
 }

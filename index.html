@@ -453,7 +453,7 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <button class="ingredients-button">
+          <button type="button" class="ingredients-button" data-bs-toggle="modal" href="#ingredients">
             View Our Full List of Ingredients
             <img class="new__window ms-3" src="/assets/images/new-window.png" alt="new-window">
           </button>
@@ -712,7 +712,17 @@
           </div>
       </div>
     </footer>
-
+    <div class="modal fade" tabindex="-1" id="ingredients" aria-labelledby="ingredientsLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center">
+            <img class="img-fluid" src="/assets/images/full_ingredients.png" alt="full_ingredients">
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-    
 </html>

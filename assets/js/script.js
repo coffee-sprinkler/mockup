@@ -27,7 +27,3 @@ if (window.innerWidth <= 428) {
   ingredientsBtn.innerHTML =
     'GET PURPOSE NOW <i class="fa-solid fa-play ms-3"></i>';
 }
-
-ingredientsBtn.addEventListener('click', e => {
-  console.log(e);
-});

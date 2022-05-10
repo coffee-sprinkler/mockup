@@ -508,7 +508,7 @@ a:hover {
 /*END HEADER - HERO - ABOUT - FOOTER */
 
 .adaptive {
-  background-image: url('/assets/images/adaptive_bg.png'),
+  background-image: url('../images/adaptive_bg.png'),
     linear-gradient(180deg, #5fa900 0%, #60a112 100%);
   background-repeat: no-repeat;
   background-size: cover;
